@@ -55,7 +55,7 @@ extension MyClass: HorizontalLayoutDelegate {
 
 <p>At the moment CustomShapeHorizontalLayout only supports 3 types of aspact ratio: Landscape, portrait and square.</p>
 
-You can see a simple implementation of CustomShapeHorizontalLayout in CustomShapeHorizontalLayoutExample.
+You can see a simple implementation of CustomShapeHorizontalLayout in [CustomShapeHorizontalLayoutExample](https://github.com/lmbcosta/CustomShapeHorizontalLayout/tree/master/CustomShapeHorizontalLayoutExample).
 Please check [ViewController.swift](https://github.com/lmbcosta/CustomShapeHorizontalLayout/blob/master/CustomShapeHorizontalLayoutExample/ViewController.swift) file.</br>
 
 ## Author
