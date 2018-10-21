@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol HorizontalLayoutProtocol: class {
+public protocol HorizontalLayoutDelegate: class {
     var portraitWidth: CGFloat { get }
     var lanscapeWidth: CGFloat { get }
     var squareWidth: CGFloat { get }
@@ -18,7 +18,7 @@ public protocol HorizontalLayoutProtocol: class {
 }
 
 public class CustomShapeHorizontalLayout: UICollectionViewLayout {
-    public weak var delegate: HorizontalLayoutProtocol?
+    public weak var delegate: HorizontalLayoutDelegate?
     
     // Number of Lines
     fileprivate var numberOfRows: Int = 2
