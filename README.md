@@ -13,14 +13,14 @@ pod 'CustomShapeHorizontalLayout', :git => "https://github.com/lmbcosta/CustomSh
 ```
 
 ## Usage
-# Import 
+#### Import 
 Like other CocoaPods you need the import CustomShapeHorizontalLayout
 
 ```swift
 import CustomShapeHorizontalLayout
 ```
 
-# Protocol
+#### Protocol
 After that, you need to supply a concrete implementation of HorizontalLayoutDelegate protocol.
 ```swift
 public protocol HorizontalLayoutDelegate: class {
@@ -31,14 +31,32 @@ public protocol HorizontalLayoutDelegate: class {
     
     func collectionView(_ collectionView: UICollectionView, itemOrientationAt indexpath: IndexPath) -> CustomShapeHorizontalLayout.Orientation
 }
+
+extension MyClass: HorizontalLayoutDelegate {
+
+    var portraitWidth: CGFloat { return CGFloat(185) }
+    
+    var lanscapeWidth: CGFloat { return CGFloat(205) }
+    
+    var squareWidth: CGFloat { return CGFloat(135) }
+    
+    var cellPadding: CGFloat { return CGFloat(6) }
+    
+    func collectionView(_ collectionView: UICollectionView, itemOrientationAt indexpath: IndexPath) -> CustomShapeHorizontalLayout.Orientation {
+        let orientations = CustomShapeHorizontalLayout.Orientation.allCases
+        let randomIndex = Int.random(in: 0 ..< orientations.count)
+        return orientations[randomIndex]
+    }
+}
+
 ```
 
-<p>And you are ready to go:thumbsup:<p/>
+<p>And you are ready to go:sunglasses:<p/>
 
 <p>At the moment CustomShapeHorizontalLayout only supports 3 types of aspact ratio: Landscape, portrait and square.</p>
 
-<p>You can see a simple implementation of CustomShapeHorizontalLayout in CustomShapeHorizontalLayoutExample.
-Please check [ViewController.swift](https://github.com/lmbcosta/CustomShapeHorizontalLayout/blob/master/CustomShapeHorizontalLayoutExample/ViewController.swift) file.</p>
+You can see a simple implementation of CustomShapeHorizontalLayout in CustomShapeHorizontalLayoutExample.
+Please check [ViewController,swift](https://github.com/lmbcosta/CustomShapeHorizontalLayout/blob/master/CustomShapeHorizontalLayoutExample/ViewController.swift) file.</br>
 
 ## Author
 Luís Costa - lmbcosta@hotmail.com<br/>
