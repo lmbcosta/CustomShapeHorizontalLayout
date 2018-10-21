@@ -40,7 +40,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     }
 }
 
-extension ViewController: HorizontalLayoutProtocol {
+extension ViewController: HorizontalLayoutDelegate {
     var portraitWidth: CGFloat {
         return CGFloat(185)
     }
