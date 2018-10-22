@@ -21,7 +21,7 @@ import CustomShapeHorizontalLayout
 ```
 
 #### Protocol
-After that, you need to supply a concrete implementation of HorizontalLayoutDelegate protocol.
+After that, you need to supply a concrete implementation of HorizontalLayoutDelegate protocol.<br/>
 ```swift
 public protocol HorizontalLayoutDelegate: class {
     var portraitWidth: CGFloat { get }
@@ -32,7 +32,14 @@ public protocol HorizontalLayoutDelegate: class {
     func collectionView(_ collectionView: UICollectionView, itemOrientationAt indexpath: IndexPath) -> CustomShapeHorizontalLayout.Orientation
 }
 
-extension MyClass: HorizontalLayoutDelegate {
+class MyViewController: UIViewController, HorizontalLayoutDelegate {
+
+    var customShapeHorizontalLayout: CustomShapeHorizontalLayout?
+
+    override viewDidLoad() {
+        super.viewDidLoad()
+        customShapeHorizontalLayout?.delegate = self
+    }
 
     var portraitWidth: CGFloat { return CGFloat(185) }
     
@@ -50,6 +57,7 @@ extension MyClass: HorizontalLayoutDelegate {
 }
 
 ```
+
 
 <p>And you are ready to go:sunglasses:<p/>
 

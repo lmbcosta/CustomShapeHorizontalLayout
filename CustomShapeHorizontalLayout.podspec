@@ -1,14 +1,13 @@
 Pod::Spec.new do |s|
 
 # 1
-s.platform = :ios
 s.ios.deployment_target = '8.0'
 s.name = "CustomShapeHorizontalLayout"
 s.summary = "CollectionViewLayout that provides horizontal scroll for cells with different content modes"
 s.requires_arc = true
 
 # 2
-s.version = "0.1.0"
+s.version = "1.0.1"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }

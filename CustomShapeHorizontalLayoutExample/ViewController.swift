@@ -11,6 +11,7 @@ import CustomShapeHorizontalLayout
 
 class ViewController: UIViewController, UICollectionViewDataSource {
     
+    // UI
     @IBOutlet weak var collectionView: UICollectionView!
     
     let colors: [UIColor] = [.black, .blue, .green, .brown, .cyan, .darkGray, .yellow, .red, .green]
