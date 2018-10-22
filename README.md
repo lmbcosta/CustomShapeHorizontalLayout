@@ -36,7 +36,7 @@ class MyViewController: UIViewController, HorizontalLayoutDelegate {
 
     var customShapeHorizontalLayout: CustomShapeHorizontalLayout?
 
-    override viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         customShapeHorizontalLayout?.delegate = self
     }
