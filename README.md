@@ -66,7 +66,7 @@ You can see a simple implementation of CustomShapeHorizontalLayout in [CustomSha
 Please check [ViewController.swift](https://github.com/lmbcosta/CustomShapeHorizontalLayout/blob/master/CustomShapeHorizontalLayoutExample/ViewController.swift) file.</br>
 
 ### Example
-![](https://gph.is/2NWCcdq)
+![](https://media.giphy.com/media/9SIY0ruM09BLymesEv/giphy.gif)
 
 ## Author
 Luís Costa - lmbcosta@hotmail.com<br/>
