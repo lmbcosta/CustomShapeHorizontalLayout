@@ -6,7 +6,7 @@ A CollectionViewLayout that enables horizontal scroll using cells with different
 * ARC
 * iOS 8.0
 
-### Installation
+## Installation
 CustomShapeHorizontalLayout is available through [CocoaPods](https://cocoapods.org)<br/>
 ```ruby
 pod 'CustomShapeHorizontalLayout', :git => "https://github.com/lmbcosta/CustomShapeHorizontalLayout.git"
@@ -58,13 +58,16 @@ class MyViewController: UIViewController, HorizontalLayoutDelegate {
 
 ```
 
-
 <p>And you are ready to go:sunglasses:<p/>
 
 <p>At the moment CustomShapeHorizontalLayout only supports 3 types of aspact ratio: Landscape, portrait and square.</p>
 
 You can see a simple implementation of CustomShapeHorizontalLayout in [CustomShapeHorizontalLayoutExample](https://github.com/lmbcosta/CustomShapeHorizontalLayout/tree/master/CustomShapeHorizontalLayoutExample).
 Please check [ViewController.swift](https://github.com/lmbcosta/CustomShapeHorizontalLayout/blob/master/CustomShapeHorizontalLayoutExample/ViewController.swift) file.</br>
+
+### Example
+![](http://i.imgur.com/OUkLi.gif)
+
 
 ## Author
 Luís Costa - lmbcosta@hotmail.com<br/>
